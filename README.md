@@ -9,7 +9,7 @@ Build a (Expand it, be creative) reconnaissance tool in Python that can:
 - Identify common services from discovered ports.
 - Store results in a shared data structure.
 - Produce a simple terminal report.
-- Work collaboratively using Git/GitHub.
+- Work collaboratively using Git/GitHub. https://bcusca.org/sca_git_cheatsheet.pdf
 
 > **Only scan systems you own or have explicit permission to test.**
 > For this workshop, use the target provided by the SCA/team.
