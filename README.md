@@ -1,4 +1,4 @@
-# SCA Workshop 1 — Python Recon Tool
+# SCA Workshop - Python Recon Tool
 
 ## Objective
 
