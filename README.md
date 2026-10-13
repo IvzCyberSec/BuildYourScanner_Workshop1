@@ -1,4 +1,4 @@
-# SCA Workshop - Python Recon Tool
+# BCUCompSoc Workshop - Python Recon Tool
 
 ## Objective
 
@@ -9,10 +9,10 @@ Build a (Expand it, be creative) reconnaissance tool in Python that can:
 - Identify common services from discovered ports.
 - Store results in a shared data structure.
 - Produce a simple terminal report.
-- Work collaboratively using Git/GitHub. https://bcusca.org/sca_git_cheatsheet.pdf
+- Work collaboratively using Git/GitHub. https://bcucompsoc.org/sca_git_cheatsheet.pdf
 
 > **Only scan systems you own or have explicit permission to test.**
-> For this workshop, use the target provided by the SCA/team.
+> For this workshop, use the target provided by the BCUCompSoc/team.
 
 ---
 
@@ -221,7 +221,7 @@ The objective is **not** to replace Nmap. It is to understand the fundamentals b
 Only scan:
 
 - Your own systems.
-- The SCA workshop/lab target.
+- The BCUCompSoc workshop/lab target.
 - Systems where you have explicit permission.
 
 Do not scan random public IP addresses, university infrastructure, or other people's devices.
