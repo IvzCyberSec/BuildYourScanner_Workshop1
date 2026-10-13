@@ -1,18 +1,21 @@
 import socket
 
-
 def scan_port(target, port):
-    # TODO:
-    # Create a TCP socket.
-    # Set a timeout.
-    # Try connecting to the target/port.
-    # Return True if the port is open, otherwise False.
-    pass
+    try:
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+            sock.settimeout(1)
+            result = sock.connect_ex((target, port))
+            return result == 0
+    except OSError:
+        return False
 
 
 def run_recon(target, results):
-    # TODO:
-    # Scan the agreed port range.
-    # Add open ports to results["ports"].
-    # Return the updated results.
-    pass
+    print(f"Running reconnaissance on {target}...")
+
+    for port in range(1, 257):
+        if scan_port(target, port):
+            print(f"Port {port} is open on {target}.")
+            results["ports"].append(port)
+
+    return results

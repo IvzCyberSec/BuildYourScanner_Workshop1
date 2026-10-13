@@ -4,17 +4,21 @@ from report import generate_report
 
 
 def main():
-    # TODO: Get the target from the user.
+    target = input("Enter the target IP address or the hostname:")
 
-    # TODO: Create the shared results dictionary.
-    # It should contain:
-    # target, ports, services
+    if not target:
+        print("No target specified. Exiting.")
+        return
 
-    # TODO: Pass results through the reconnaissance stage.
+    results = {
+        "target": target,
+        "ports": [],
+        "services": {},
+    }
 
-    # TODO: Pass results through the analysis stage.
-
-    # TODO: Generate the final report.
+    results = run_recon(target, results)
+    results = analyse_results(results)
+    generate_report(results)
 
 
 if __name__ == "__main__":
